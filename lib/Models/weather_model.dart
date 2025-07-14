@@ -10,7 +10,7 @@ class WeatherModel {
     required this.temperature,
     required this.mainCondition,
   });
-
+  // factory is like a constructor but returns value.
   factory WeatherModel.fromJson(Map<String, dynamic> json) {
     return WeatherModel(
         cityname: json['name'],
